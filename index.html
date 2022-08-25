@@ -2,67 +2,65 @@
 <html lang="en"
 <head>
 	<title>Mi Portfolio Web</title>
-	<!--Este es un comentario--> 
 	<meta charset="utf-8">
-	<meta name="description" content="Este es el proyecto Portfolio Webb"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="author" content="Julio Villoria"
-	<!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-	<script src="https://kit.fontawesome.com/f488f2b17a.js" crossorigin="anonymous"></script>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/f488f2b17a.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
-<body>
-	<nav class="navbar navbar-expand-lg bg-primary">	
-		<div class="container-fluid">
-			<!-- Elimino el vinculo. No se usa por ahora -->
-			<!--<a class="navbar-brand" href="#">-->
-				<img src="assets/images/AP-YoProgramoLogo.png" alt="LogoArgentinaPrograma " width="12%" height="">
-			<!--</a>-->
-			<ul class="list-group list-group-horizontal">
-			   <li class="list-group-item"><i class="fa-brands fa-linkedin fa-2xl "></i></li>
-			   <li class="list-group-item"><i class="fa-brands fa-instagram fa-2xl "></i></li>
-			   <li class="list-group-item"><i class="fa-brands fa-facebook fa-2xl "></i></li>
-			   <li class="list-group-item"><i class="fa-brands fa-twitter fa-2xl "></i></li>
-			   <!--Button trigger modal -->
-			   <li class="list-group-item">
-			   	<i class="fa-solid fa-user-lock" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-			    </i>
-			   </li>
-			</ul>
-			
-   <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	<div class="modal-dialog">
-	  <div class="modal-content">
-		<div class="modal-header">
-		  <h5 class="modal-title" id="exampleModalLabel">Log-In</h5>
-		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-		</div>
-		<div class="modal-body">
-		    <div class="mb-3 row">
-    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control-plaintext" id="staticEmail" value="email@ejemplo.com">
-    </div>
-  </div>
-  <div class="mb-3 row">
-    <label for="inputPassword" class="col-sm-2 col-form-label">Contraseña</label>
-    <div class="col-sm-10">
-      <input type="password" class="form-control" id="inputPassword">
-    </div>
-  </div>
-		</div>
-		<div class="modal-footer">
-		  <button type="button" class="btn btn-primary">Inicio de sesion</button>
-		</div>
-	  </div>
-	 </div>
-    </div>
-  </div>
- </nav>
 
- <!-- Aca termina el nav y comienza el banner hecho en base a un carousel modificado bajado de aca: https://getbootstrap.com/docs/5.2/components/carousel/ -->
+<body>
+	<header>
+<!--Comienzo del nav (la barra de navegacion)-->
+	  <nav class="navbar navbar-expand-lg bg-primary">	
+		  <div class="container-fluid">
+				  <img src="assets/images/AP-YoProgramoLogo.png" alt="LogoArgentinaPrograma " width="12%" height="">
+				  <ul class="list-group list-group-horizontal">
+			        <li class="list-group-item"><i class="fa-brands fa-linkedin fa-2xl "></i></li>
+			        <li class="list-group-item"><i class="fa-brands fa-instagram fa-2xl "></i></li>
+			        <li class="list-group-item"><i class="fa-brands fa-facebook fa-2xl "></i></li>
+			        <li class="list-group-item"><i class="fa-brands fa-twitter fa-2xl "></i></li>
+			        <!--Button trigger modal. Este boton llama al Modal -->
+			        <li class="list-group-item">
+			           <i class="fa-solid fa-user-lock" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+			           </i>
+			       </li>
+			     </ul>
+<!--Comienzo del Modal -->
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	   <div class="modal-content">
+		  <div class="modal-header">
+		   <h5 class="modal-title" id="exampleModalLabel">Log-In</h5><!--Texto encabezamiento modal sup.izqu.-->
+		   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button><!--El boton"X"-->
+		  </div>
+<!--Empieza el cuerpo del Modal-->
+		     <div class="modal-body">
+		      <div class="mb-3 row"><!--Linea de ingreso de e-mail-->
+           <label for="staticEmail" class="col-sm-2 col-form-label">E-mail</label><!--Etiqueta que dice e-mail-->
+            <div class="col-sm-10">
+             <input type="text" class="form-control-plaintext" id="staticEmail" value="email@ejemplo.com"><!--imput del e-mail-->
+            </div>
+          </div>
+          <div class="mb-3 row"><!--Linea de ingreso de contraseña-->
+           <label for="inputPassword" class="col-sm-2 col-form-label">Contraseña</label>
+            <div class="col-sm-10">
+             <input type="password" class="form-control" id="inputPassword"><!--Imput de la contraseña-->
+            </div>
+          </div>
+		     </div>
+		     <div class="modal-footer"><!--Empieza footer del Modal-->
+		       <button type="button" class="btn btn-primary">Inicio de sesion</button>
+		     </div>
+	      </div>
+	     </div>
+      </div>
+     </div><!--Fin del Modal-->
+    </nav><!--Fin del nav-->
+
+ <!-- Aca termina el nav y comienza un banner hecho en base a un carousel modificado bajado de aca: https://getbootstrap.com/docs/5.2/components/carousel/ -->
   <!-- <div class="banner">
       <img src="assets/images/banner.png" class="d-block w-100" alt="banner electronica">
    </div>-->
@@ -73,36 +71,81 @@
     <p></p>
   </div>-->
   <!--Sigue uno aun mas facil con imagen responsiva- debe tener width=100% (en porcentaje-no pix)-->
-  <img class="img-responsive" src="assets/images/banner.png" width="100%" alt="bannerElectronica-Programacion">
+    <img class="img-responsive" src="assets/images/banner.png" width="100%" alt="bannerElectronica-Programacion">
+  </header>
   <!--Aca empieza la seccion "sobre mi"-->
-   <section id= "sobre-mi">
- <div class="container text-center">
-  <div class="row">
-    <div class="col-3">
-    	<img src="assets/images/FOTO PERFIL.JPG" class="img-rounded circle w-75" alt= "..." title="..." >
-    </div>
-    <div class="col-6">
-    	<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  	        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-  	        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-  	        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-  	        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-  	        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-       </h4>
-    </div>
-    <div
-     class="col-3">
-    </div>
-  </div>
-</div>
-</section>
+  <section id= "Acerca de mi"><!--Seccion contenida en una grid de 3 columnas-->
+      <div class="container text-center">
+         <div class="row">
+            <div class="col-3">
+    	        <img src="assets/images/FOTO PERFIL.JPG" class="rounded-circle w-75" alt= "..." title="..." >
+    	        <h4 id= "mi nombre"> <b> Julio Villoria</b></h4>
+    	        <h5 id="title">Full Stack Developer Jr.</h5>
+    	      </div>
+            <div class="col-6 pt-3">
+            	 <h5 ><strong>Sobre mi:</strong></h5>
+    	         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  	            empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  	           </p>
+           </div>
+          <div class="col-3"><!--columna vacia--></div>
+         </div>
+      </div>
+  </section>
+  <section id= "experiencia"><!--Seccion contenida en una grid de 5 columnas-->
+      <div class="container text-center">
+         <div class="row">
+            <div class="col-1"><p>Titulo del puesto</p></div>
+            <div class="col-2 ">periodo</div>
+            <div class="col-3 ">logo empresa</div> 
+            <div class="col-4 "><p>descripcion de la actividad dedsarrollada en el puesto  </p></div>
+    	      <div class="col-2"><!--columna vacia--></div>
+         </div>
+      </div>
+  </section>
+  <section id= "educacion"><!--Seccion contenida en una grid de 4 columnas-->
+      <div class="container text-center">
+         <div class="row">
+            <div class="col-3"><p>Nombre Instituto</p></div>
+            <div class="col-4 ">logo instituto</div>
+            <div class="col-3 "><p>carrera o titulo</p></div>
+            <div class="col-3 ">periodo o años de cursada</div>
+    	      <div class="col-2"><!--columna vacia--></div>
+         </div>
+      </div>
+  </section>
+  <section id= "Hard and soft skills">
+      <div class="container text-center">
+      </div>
+  </section>
+  <section id= "Proyectos">
+      <div class="container text-center">
+         <div class="row">
+            <div class="col-3">
+    	        nombre proyecto
+            </div>
+            <div class="col-2">
+               fecha proyecto
+  	        </div>
+            <div class="col-5">
+               descripcion del proyecto
+            </div>
+            <div class="col-2">
+               link al proyecto
+            </div>
+         </div>
+      </div>
+  </section>
+
+  
+
   
 
   	
 
   	
 
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+ <!-- JavaScript Bundle with Popper -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
