@@ -30,15 +30,26 @@ i.fa-brands.fa-twitter.fa-2xl:hover{
    --bs-list-group-bg:transparent;
 }  
 
-section.dashboard, section.panel{
+sectioNn.dashboard{
     margin-top: 9rem; 
 }
 
 p {
-    font-size: 15px; 
+   font-size : 15px; 
 
 }
 
-.container text-center {
-    margin-top: 99rem;
-}   
+.experiencia {
+    margin-top: 10px;
+    margin-bottom: 10px;
+   
+}
+
+section {
+    background-color: #ddd;
+ } 
+
+ section.Acerca-de-mi {
+   
+  mt-10; 
+     } 
