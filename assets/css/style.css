@@ -30,8 +30,12 @@ i.fa-brands.fa-twitter.fa-2xl:hover{
    --bs-list-group-bg:transparent;
 }  
 
-sectioNn.dashboard{
-    margin-top: 9rem; 
+#panel.panel{
+    margin-top: 1rem; 
+}
+
+.container-fluid.text-center{
+    margin-top: 1rem; 
 }
 
 p {

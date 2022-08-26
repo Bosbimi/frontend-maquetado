@@ -41,12 +41,12 @@
                 <div ><button type="button" class="btn btn-primary btn-lg p-5" data-bs-toggle="modal" data-bs-target="#exampleModal">REDES SOCIALES</i></button></div>
             </div>
             <div class="col">
-                <div ><button type="button" class="btn btn-primary btn-lg p-5" data-bs-toggle="modal" data-bs-target="#exampleModal">EDUCACION</button></div>
+                <div ><button type="button" class="btn btn-primary btn-lg p-5" data-bs-toggle="modal" data-bs-target="#educationModal">EDUCACION</button></div>
             </div>
          </div>
          <div class="row mt-2  g-2 g-lg-3">
             <div class="col">
-                <div> <button type="button" class="btn btn-primary btn-lg p-5" data-bs-toggle="modal" data-bs-target="#exampleModal">EXPERIENCIA</button></div>
+                <div> <button type="button" class="btn btn-primary btn-lg p-5" data-bs-toggle="modal" data-bs-target="#experienceModal">EXPERIENCIA</button></div>
             </div>
             <div class="col">
                 <div><button type="button" class="btn btn-primary btn-lg p-5" data-bs-toggle="modal" data-bs-target="#exampleModal">SOBRE MI</button></div>
@@ -68,37 +68,71 @@
             
          </div>
       </div> 
-  </section>
-     <!--Comienzo del Modal (cabecera)  de log in del nav -->
-             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-               <div class="modal-content">
-                <div class="modal-header">
-                 <h5 class="modal-title" id="exampleModalLabel">Log-In</h5><!--Texto encabezamiento modal sup.izqu.-->
-                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button><!--El boton"X"-->
-                </div>
+  <!--Comienzo del Modal (cabecera)  de log in del nav -->
+   <div class="modal fade" id="educationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+     <div class="modal-content">
+      <div class="modal-header">
+       <h5 class="modal-title" id="exampleModalLabel">Educación</h5><!--Texto encabezamiento modal sup.izqu.-->
+       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button><!--El boton"X"-->
+      </div>
 <!--Empieza el cuerpo del Modal-->
-                   <div class="modal-body">
-                    <div class="mb-3 row"><!--Linea de ingreso de e-mail-->
-                     <label for="staticEmail" class="col-sm-2 col-form-label">E-mail</label><!--Etiqueta que dice e-mail-->
-                      <div class="col-sm-10">
-                       <input type="text" class="form-control-plaintext" id="staticEmail" value="email@ejemplo.com"><!--imput del e-mail-->
-                      </div>
-                    </div>
-                    <div class="mb-3 row"><!--Linea de ingreso de contraseña-->
-                     <label for="inputPassword" class="col-sm-2 col-form-label">Contraseña</label>
-                      <div class="col-sm-10">
-                       <input type="password" class="form-control" id="inputPassword"><!--Imput de la contraseña-->
-                      </div>
-                    </div>
-                   </div>
-                   <div class="modal-footer"><!--Empieza footer del Modal-->
-                     <button type="button" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#exampleModal">Inicio de sesion</button>
-                   </div>
-                  </div>
-                 </div>
-                </div>
-               </div><!--Fin del Modal--> 
+         <div class="modal-body">
+          <div class="mb-3 row"><!--Linea de ingreso de e-mail-->
+           <div class="mb-3"> 
+          <label for="formFileSm" class="form-label">Logo Institucion</label>
+          <input class="form-control form-control-sm" id="formFileSm" type="file">
+          <button type="button" class="btn btn-primary">Confirmar</button>
+        </div>
+        <div class="mb-3"> 
+          <label for="formFileSm" class="form-label">Nombre Instituto</label>
+          <input class="form-control form-control-sm" id="formFileSm" type="text">
+          <button type="button" class="btn btn-primary">Confirmar</button>
+        </div>
+         </div>
+         <div class="modal-footer"><!--Empieza footer del Modal-->
+           <button type="button" class="btn btn-primary">Guardar</button>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div><!--Fin del Modal-->
+
+     <!--Comienzo del Modal  -->
+   <div class="modal fade" id="experienceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+     <div class="modal-content">
+      <div class="modal-header">
+       <h5 class="modal-title" id="exampleModalLabel">Experiencia</h5><!--Texto encabezamiento modal sup.izqu.-->
+       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button><!--El boton"X"-->
+      </div>
+<!--Empieza el cuerpo del Modal-->
+         <div class="modal-body">
+          <div class="mb-3 row">
+           <label for="formFileSm" class="form-label">Logo Empresa</label>
+           <input class="form-control form-control-sm" id="formFileSm" type="file">
+           <button type="button" class="btn btn-primary">Confirmar</button>
+           <label for="formFileSm" class="form-label">Puesto</label>
+           <input class="form-control form-control-sm" id="formFileSm" type="text">
+           <button type="button" class="btn btn-primary">Confirmar</button>
+           <label for="formFileSm" class="form-label">Descripcion del Puesto</label>
+           <textarea class="form-control form-control-sm" id="formFileSm" type="file"></textarea>
+
+          </div>
+          
+         <div class="modal-footer"><!--Empieza footer del Modal-->
+           <button type="button" class="btn btn-primary">Guardar</button>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div><!--Fin del Modal-->
+ 
+  
+
+
+
+
   
 
   
