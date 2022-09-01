@@ -1,3 +1,10 @@
+* {
+
+margin-right: 5 rem;
+padding: 0.25%;
+
+}
+
 .navbar.navbar-expand-lg.bg-primary{
     background-color:rgb(107, 105, 214) !important; 
 }
@@ -53,7 +60,25 @@ section {
     background-color: #ddd;
  } 
 
- section.Acerca-de-mi {
-   
+ section.Acerca-de-mi {   
   mt-10; 
      } 
+
+
+.bg-primary {
+   
+ border-radius: 10px;
+ border-color:rgb(0, 0, 0);
+ border-width: 20px;
+     } 
+
+.img-responsive {   /* Bordes redondeados de la imagen de banner*/
+ border-radius: 10px;
+}
+
+.rounded-circle {  /* imagen perfil*/
+ position: relative;
+ margin-top: -5rem;
+ border:3px solid  #555f;
+
+ } 
