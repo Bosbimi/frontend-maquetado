@@ -1,24 +1,27 @@
+/*Estilo general del body*/
 * {
-
-margin-right: 5 rem;
-padding: 0.25%;
-
+   margin-right: 5 rem;
+   padding: 0.25%;
 }
 
 .navbar.navbar-expand-lg.bg-primary{
-    background-color:rgb(107, 105, 214) !important; 
+  background-color:#888 !important; 
 }
  
+
+/*Redes sociales*/
 i.fa-brands.fa-facebook.fa-2xl,
 i.fa-brands.fa-linkedin.fa-2xl,
 i.fa-brands.fa-instagram.fa-2xl,
 i.fa-brands.fa-twitter.fa-2xl{
-    color:#fff;
+  color:#fff;
 }
 
 
 i.fa-brands.fa-facebook.fa-2xl:hover{
     color:#0031ff;
+   /* transition: transform 0.3s ease-in-out ;
+    transition: scale 1.25;*//*agrandamiento no anda*/
 }
 
 i.fa-brands.fa-linkedin.fa-2xl:hover{
@@ -58,27 +61,37 @@ p {
 
 section {
     background-color: #ddd;
+
  } 
 
- section.Acerca-de-mi {   
-  mt-10; 
-     } 
+
+
+
+
+
+
+#Acerca-de-mi {   
+   mt-10; 
+   border:3px solid  #555f;
+   background-color: #bbb;
+} 
 
 
 .bg-primary {
-   
- border-radius: 10px;
- border-color:rgb(0, 0, 0);
- border-width: 20px;
-     } 
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   border:2px solid  #555f;
+} 
 
-.img-responsive {   /* Bordes redondeados de la imagen de banner*/
- border-radius: 10px;
+.img-fluid {   /* Bordes redondeados de la imagen de banner*/
+   border:2px solid  #555f;
 }
 
 .rounded-circle {  /* imagen perfil*/
- position: relative;
- margin-top: -5rem;
- border:3px solid  #555f;
+   position: relative;
+   margin-top: -5rem;
+   border:2px solid  #555f;
+  /* z-index: -1*/
 
- } 
+} 
+
