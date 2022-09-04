@@ -59,7 +59,7 @@ p {
    
 }
 
-section {
+section, #Hard-soft-skills .container-fluid .progress {
     background-color: #ddd;
 
  } 
@@ -95,3 +95,8 @@ section {
 
 } 
 
+#Hard-soft-skills .container-fluid .progress {
+    border:1px solid  #555;
+    background-color: rgb(137, 170, 192);
+
+}
